@@ -1,0 +1,53 @@
+[2024-12-13 11:09:36 INFO restartedMain] [com.green.greengramver6.GreenGramVer6Application] Starting GreenGramVer6Application using Java 17.0.13 with PID 2468 (D:\lej\GreenGramVer6\build\classes\java\main started by Administrator in D:\lej\GreenGramVer6)
+[2024-12-13 11:09:36 INFO restartedMain] [com.green.greengramver6.GreenGramVer6Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-13 11:09:36 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-13 11:09:36 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-13 11:09:37 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-13 11:09:37 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-13 11:09:37 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-13 11:09:37 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-12-13 11:09:37 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-13 11:09:37 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 779 ms
+[2024-12-13 11:09:37 INFO restartedMain] [com.green.greengramver6.common.MyFileUtils] MyFileUtils - 생성자: D:\Students\download\greengram_ver6
+[2024-12-13 11:09:37 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-13 11:09:37 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-13 11:09:37 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-13 11:09:37 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-13 11:09:37 INFO restartedMain] [com.green.greengramver6.GreenGramVer6Application] Started GreenGramVer6Application in 1.668 seconds (process running for 2.003)
+[2024-12-13 11:09:40 INFO http-nio-8080-exec-4] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-13 11:09:40 INFO http-nio-8080-exec-4] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-13 11:09:40 INFO http-nio-8080-exec-4] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-12-13 11:09:40 INFO http-nio-8080-exec-4] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-13 11:09:40 INFO http-nio-8080-exec-4] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@23339f75
+[2024-12-13 11:09:40 INFO http-nio-8080-exec-4] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-13 11:09:41 DEBUGhttp-nio-8080-exec-4] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO feed
+           SET writer_user_id = 11
+             , contents = NULL
+             , location = '앙'
+ {executed in 0 msec}
+[2024-12-13 11:09:41 DEBUGhttp-nio-8080-exec-4] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: INSERT INTO feed
+           SET writer_user_id = 11
+             , contents = NULL
+             , location = '앙'
+ {executed in 0 msec}
+[2024-12-13 11:09:41 INFO http-nio-8080-exec-4] [jdbc.resultsettable] 
+|----------|
+|insert_id |
+|----------|
+|258       |
+|----------|
+
+[2024-12-13 11:09:41 DEBUGhttp-nio-8080-exec-4] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO feed_pic
+        ( feed_id, pic )
+        VALUES
+         (  
+            258, 'd35ff5f0-1fee-4d2e-bdc2-5b03c88e063f.gif'
+         )
+ {executed in 0 msec}
+[2024-12-13 11:10:00 INFO SpringApplicationShutdownHook] [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[2024-12-13 11:10:00 INFO tomcat-shutdown] [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[2024-12-13 11:10:00 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-13 11:10:00 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
