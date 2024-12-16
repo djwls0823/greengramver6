@@ -120,6 +120,7 @@ public class FeedService {
         Map<Long, FeedCommentGetRes> commentHashMap = new HashMap<>();
         for(FeedCommentDto item : feedCommentList) {
             long feedId = item.getFeedId();
+
             if(!commentHashMap.containsKey(feedId)) {
                 FeedCommentGetRes feedCommentGetRes = new FeedCommentGetRes();
                 feedCommentGetRes.setCommentList(new ArrayList<>());
